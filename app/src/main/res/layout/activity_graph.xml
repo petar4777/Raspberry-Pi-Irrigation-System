@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_graph"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="uk.ac.kcl.www.raspberry_pi_irrigation_system.GraphActivity"
+        android:background="@drawable/aaaaaaa"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9">
+
+            <Button
+                android:id="@+id/tempTimeGraph"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/ripple_effect_button_shape_4"
+                android:text="Temperature vs. Time graph"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/humTimeGraph"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/ripple_effect_button_shape_2"
+                android:text="Humidity vs. Time graph"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/moistTimeGraph"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/ripple_effect_button_shape_3"
+                android:text="Moisture vs. Time graph"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/waterCons"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/ripple_effect_button_shape_clicked"
+                android:text="Water consumption per day graph"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/customGraph"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:background="@drawable/ripple_effect_button_shape_5"
+                android:text="Custom graph"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <Button
+                android:id="@+id/graphActivityBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple_effect_button_shape"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>

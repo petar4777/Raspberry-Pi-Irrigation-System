@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uk.ac.kcl.www.raspberry_pi_irrigation_system">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".IrrigationSystemApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/try2">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".GraphActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".CustomGraphActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ManualIrrigationActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".CertainGraphActivity"
+            android:label="@string/title_activity_certain_graph"
+            android:theme="@style/try2" />
+        <activity android:name=".LoginScreenActivity" />
+        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".ChooseSignOrLogActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ForgottenPasswordActivity"></activity>
+    </application>
+
+</manifest>

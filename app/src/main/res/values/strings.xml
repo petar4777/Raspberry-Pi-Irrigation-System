@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Raspberry_Pi_Irrigation_System</string>
+    <string name="title_activity_certain_graph">CertainGraphActivity</string>
+</resources>
